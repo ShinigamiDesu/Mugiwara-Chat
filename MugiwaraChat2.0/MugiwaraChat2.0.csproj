@@ -1,0 +1,395 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BBF3AAF5-A53F-4388-A048-7CB40ABA834B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>MugiwaraChat2._0</RootNamespace>
+    <AssemblyName>MugiwaraChat2.0</AssemblyName>
+    <TargetFrameworkVersion>v4.8.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8.1\System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="addGroupChat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addGroupChat.Designer.cs">
+      <DependentUpon>addGroupChat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addMember.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="addMember.Designer.cs">
+      <DependentUpon>addMember.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addMemberMain.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="addMemberMain.Designer.cs">
+      <DependentUpon>addMemberMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddUser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AddUser.Designer.cs">
+      <DependentUpon>AddUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddUserMain.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AddUserMain.Designer.cs">
+      <DependentUpon>AddUserMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AllFriends.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AllFriends.Designer.cs">
+      <DependentUpon>AllFriends.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Chat.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Chat.Designer.cs">
+      <DependentUpon>Chat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataIO.cs" />
+    <Compile Include="FriendRequests.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FriendRequests.Designer.cs">
+      <DependentUpon>FriendRequests.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fromMessage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="fromMessage.Designer.cs">
+      <DependentUpon>fromMessage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="groupChat.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="groupChat.Designer.cs">
+      <DependentUpon>groupChat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="groupChatMain.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="groupChatMain.Designer.cs">
+      <DependentUpon>groupChatMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="groupChatTemplate.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="groupChatTemplate.Designer.cs">
+      <DependentUpon>groupChatTemplate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="groupMembersTemplate.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="groupMembersTemplate.Designer.cs">
+      <DependentUpon>groupMembersTemplate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="groupSettings.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="groupSettings.Designer.cs">
+      <DependentUpon>groupSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainPage.Designer.cs">
+      <DependentUpon>MainPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PictureFormat.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="chatTemplate.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="chatTemplate.Designer.cs">
+      <DependentUpon>chatTemplate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RoundedPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="searchChat.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="searchChat.Designer.cs">
+      <DependentUpon>searchChat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SignUP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SignUP.Designer.cs">
+      <DependentUpon>SignUP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Text1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Text1.Designer.cs">
+      <DependentUpon>Text1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Text2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Text2.Designer.cs">
+      <DependentUpon>Text2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Text3.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Text3.Designer.cs">
+      <DependentUpon>Text3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="newChatMain.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="newChatMain.Designer.cs">
+      <DependentUpon>newChatMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="toMessage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="toMessage.Designer.cs">
+      <DependentUpon>toMessage.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="addGroupChat.resx">
+      <DependentUpon>addGroupChat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addMember.resx">
+      <DependentUpon>addMember.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addMemberMain.resx">
+      <DependentUpon>addMemberMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddUser.resx">
+      <DependentUpon>AddUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddUserMain.resx">
+      <DependentUpon>AddUserMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllFriends.resx">
+      <DependentUpon>AllFriends.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Chat.resx">
+      <DependentUpon>Chat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FriendRequests.resx">
+      <DependentUpon>FriendRequests.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fromMessage.resx">
+      <DependentUpon>fromMessage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="groupChat.resx">
+      <DependentUpon>groupChat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="groupChatMain.resx">
+      <DependentUpon>groupChatMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="groupChatTemplate.resx">
+      <DependentUpon>groupChatTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="groupMembersTemplate.resx">
+      <DependentUpon>groupMembersTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="groupSettings.resx">
+      <DependentUpon>groupSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainPage.resx">
+      <DependentUpon>MainPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="chatTemplate.resx">
+      <DependentUpon>chatTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="searchChat.resx">
+      <DependentUpon>searchChat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SignUP.resx">
+      <DependentUpon>SignUP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Text1.resx">
+      <DependentUpon>Text1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Text2.resx">
+      <DependentUpon>Text2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Text3.resx">
+      <DependentUpon>Text3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="newChatMain.resx">
+      <DependentUpon>newChatMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="toMessage.resx">
+      <DependentUpon>toMessage.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="IMG\Menu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="IMG\X.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="IMG\Close Window.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="IMG\Minimize Window.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="IMG\Join.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="IMG\Heart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="IMG\People Skin Type 7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="IMG\Logout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="IMG\Home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="IMG\Chat_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot 2023-12-24 075037.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="IMG\Forward.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="IMG\Green Circle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="IMG\Red Circle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Chats.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Chats_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>Chats.mdf</DependentUpon>
+    </Content>
+    <None Include="Resources\jjk.png" />
+    <None Include="IMG\Settings_1.png" />
+    <None Include="IMG\Refresh.png" />
+    <None Include="IMG\Chat Room_2.png" />
+    <None Include="IMG\Ellipsis.png" />
+    <None Include="IMG\User Account.png" />
+    <None Include="IMG\Search.png" />
+    <None Include="IMG\Add.png" />
+    <None Include="IMG\Google Web Search_1.png" />
+    <None Include="IMG\Ok_1.png" />
+    <None Include="IMG\Xbox X.png" />
+    <None Include="Resources\strawhat-1.png" />
+    <None Include="Resources\image.png" />
+    <None Include="IMG\Name_1.png" />
+    <None Include="IMG\Male User.png" />
+    <None Include="IMG\Go Back.png" />
+    <None Include="IMG\Paper Plane.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.8.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.8.1 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
